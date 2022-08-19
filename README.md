@@ -8,9 +8,9 @@
 
 4. A text file named **Dockerfile** (which is basically a text-based script of instructions that is used to create a docker image) is created in the same folder as the package.json
 
-5. In the Dockerfile we write the following 
+5. In the Dockerfile we write the following;
 
-6. syntax=docker/dockerfile:1
+- syntax=docker/dockerfile:1
 
 - FROM node:12-alpine
 
@@ -28,7 +28,7 @@
 
 **NB: Make sure the Dockerfile has no .txt extension**
 
-Using terminal and on the App directory, build the container image using $ docker build -t getting-started .
+6. Using terminal and on the App directory, build the container image using $ docker build -t getting-started .
 
-Start the container using $ docker run -dp 3000:3000 getting-started
+7. Start the container using $ docker run -dp 3000:3000 getting-started
 open your web browser to [local host](http://localhost:3000). You should be able to see our app.
