@@ -10,21 +10,21 @@
 
 5. In the Dockerfile we write the following;
 ```
-- syntax=docker/dockerfile:1
+  syntax=docker/dockerfile:1
 
-- FROM node:12-alpine
+  FROM node:12-alpine
 
-- RUN apk add --no-cache python2 g++ make
+  RUN apk add --no-cache python2 g++ make
 
-- WORKDIR /app
+  WORKDIR /app
 
-- COPY . .
+  COPY . .
 
-- RUN yarn install --production
+  RUN yarn install --production
 
-- CMD ["node", "src/index.js"]
-
-- EXPOSE 3000
+  CMD ["node", "src/index.js"]
+  
+  EXPOSE 3000
 ```
 **NB: Make sure the Dockerfile has no .txt extension**
 
